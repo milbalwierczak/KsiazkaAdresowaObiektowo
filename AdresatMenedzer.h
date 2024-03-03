@@ -20,12 +20,14 @@ class AdresatMenedzer{
     PlikZAdresatami plikZAdresatami;
 
     Adresat podajDaneNowegoAdresata();
+    void wyswietlDaneAdresata(Adresat adresat);
 
 public:
     AdresatMenedzer();
     void ustawIdZalogowanegoUzytkownika(int noweIdZalogowanegoUzytkownika);
     void dodajAdresata();
     void wczytajAdresatowZalogowanegoUzytkownikaZPliku();
+    void wyswietlWszystkichAdresatow();
 
 };
 
