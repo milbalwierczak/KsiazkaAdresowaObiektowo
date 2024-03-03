@@ -1,0 +1,2 @@
+0|4|Paulina|Lasota|123456789|123456789|Krakow, Mysliwska|
+0|4|Bartek|Halasowski|123123123|123123123|Saska|
