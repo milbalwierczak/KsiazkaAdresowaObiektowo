@@ -24,7 +24,8 @@ class AdresatMenedzer{
 public:
     AdresatMenedzer();
     void ustawIdZalogowanegoUzytkownika(int noweIdZalogowanegoUzytkownika);
-    int dodajAdresata();
+    void dodajAdresata();
+    void wczytajAdresatowZalogowanegoUzytkownikaZPliku();
 
 };
 
