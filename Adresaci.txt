@@ -1,2 +1,8 @@
-0|4|Paulina|Lasota|123456789|123456789|Krakow, Mysliwska|
-0|4|Bartek|Halasowski|123123123|123123123|Saska|
+1|4|Paulina|Lasota|123456789|123456789|Krakow, Mysliwska|
+2|4|Bartek|Halasowski|123123123|123123123|Saska|
+3|4|Milosz|Balwierczak|123123123|123123123|Krakow|
+4|3|Artur|Nowak|123|123|123|
+5|2|Milosz|Balwierczak|123|123|Krakow|
+7|2|Paulina|Lasota|456456456|456456456|Krakow|
+8|1|Milosz|Kowalski|123|123|12|
+9|1|Paulina|Kowalska|123|123|123|

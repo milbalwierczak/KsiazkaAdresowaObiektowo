@@ -2,7 +2,7 @@
 
 AdresatMenedzer::AdresatMenedzer(){}
 
-int AdresatMenedzer::dodajAdresata()
+void AdresatMenedzer::dodajAdresata()
 {
     Adresat adresat;
 
@@ -13,7 +13,7 @@ int AdresatMenedzer::dodajAdresata()
     adresaci.push_back(adresat);
     plikZAdresatami.dopiszAdresataDoPliku(adresat);
 
-    return ++idOstatniegoAdresata;
+    return;
 }
 
 Adresat AdresatMenedzer::podajDaneNowegoAdresata()
@@ -46,4 +46,9 @@ Adresat AdresatMenedzer::podajDaneNowegoAdresata()
 void AdresatMenedzer::ustawIdZalogowanegoUzytkownika(int noweIdZalogowanegoUzytkownika)
 {
     idZalogowanegoUzytkownika = noweIdZalogowanegoUzytkownika;
+}
+
+void AdresatMenedzer::wczytajAdresatowZalogowanegoUzytkownikaZPliku(){
+    adresaci = plikZAdresatami.wczytajAdresatowZalogowanegoUzytkownikaZPliku(idZalogowanegoUzytkownika);
+    idOstatniegoAdresata = plikZAdresatami.odczytajIdOstatniegoAdresataZPliku();
 }
