@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>623</x>
+      <y>14</y>
+      <w>392</w>
+      <h>245</h>
+    </coordinates>
+    <panel_attributes>KsiazkaAdresowa
+--
+- uztykownikMenedzer : UzytkownikMenedzer
+--
+KsiazkaAdresowa()
++ rejestracjaUzytkownika() : void
++ wypiszWszystkichUzytkownikow() : void
++ logowanieUzytkownika() : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>56</x>
+      <y>448</y>
+      <w>154</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>Uzytkownik
+--
+- id : Integer
+- login : String
+- haslo : String
+--
++ ustawId(int) : void
++ ustawLogin(string) : void
++ ustawHaslo(string) : void
++ pobierzId() : Integer
++ pobierzLogin() : String
++ pobierzHaslo() : String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>315</x>
+      <y>217</y>
+      <w>238</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>UzytkownikMenadzer
+--
+- idZalogowanegoUzytkownika : Integer
+- uzytkownicy : vector &lt;Uzytkownik&gt;
+--
++ rejestracjaUzytkownika() : void
++ logowanieUzytkownika() : void
++ zmianaHaslaZalogowanegoUzytkownika() : void
++ wylogowanieUzytkownika() : void
++ wypiszWszystkichUzytkownikow() : void
++ wczytajUzytkownikowZPliku() : void
++ ustawIdZalogowanegoUzytkownika(int) : void
++ pobierzIdZalogowanegoUzytkownika() : Integer
+- podajDaneNowegoUzytkownika() : Uzytkownik
+- pobierzIdNowegoUzytkownika() : Integer
+- czyIstniejeLogin() : Bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>322</x>
+      <y>434</y>
+      <w>469</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>PlikZUzytkownikami
+--
+- nazwaPlikuZUzytkownikami : String
+- plikTekstowy : fstream
+--
++ PlikZUzytkownikami()
++ dopiszUzytkownikaDoPliku() : void
++ wczytajUzytkownikowZPliku : vector &lt;Uzytkownik&gt;
+- czyPlikJestPusty() : Bool
+- zamienDaneUzytkownikaNaLinieZDanymiOddzielonaPionowymiKreskami() : String
+- pobierzDaneUzytkownika(string) : Uzytkownik
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>756</x>
+      <y>280</y>
+      <w>189</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>MetodyPomocnicze
+--
+--
++ wczytajLinie() : String
++ konwerjsaIntNaString() : string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1232</x>
+      <y>217</y>
+      <w>238</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>AdresatMenadzer
+--
+- idZalogowanegoUzytkownika : Integer
+- uzytkownicy : vector &lt;Uzytkownik&gt;
+--
++ rejestracjaUzytkownika() : void
++ logowanieUzytkownika() : void
++ zmianaHaslaZalogowanegoUzytkownika() : void
++ wylogowanieUzytkownika() : void
++ wypiszWszystkichUzytkownikow() : void
++ wczytajUzytkownikowZPliku() : void
++ ustawIdZalogowanegoUzytkownika(int) : void
++ pobierzIdZalogowanegoUzytkownika() : Integer
+- podajDaneNowegoUzytkownika() : Uzytkownik
+- pobierzIdNowegoUzytkownika() : Integer
+- czyIstniejeLogin() : Bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1001</x>
+      <y>455</y>
+      <w>154</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>Adresat
+--
+- id : Integer
+- login : String
+- haslo : String
+--
++ ustawId(int) : void
++ ustawLogin(string) : void
++ ustawHaslo(string) : void
++ pobierzId() : Integer
++ pobierzLogin() : String
++ pobierzHaslo() : String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1211</x>
+      <y>441</y>
+      <w>469</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>PlikZAdresatami
+--
+- nazwaPlikuZUzytkownikami : String
+- plikTekstowy : fstream
+--
++ PlikZUzytkownikami()
++ dopiszUzytkownikaDoPliku() : void
++ wczytajUzytkownikowZPliku : vector &lt;Uzytkownik&gt;
+- czyPlikJestPusty() : Bool
+- zamienDaneUzytkownikaNaLinieZDanymiOddzielonaPionowymiKreskami() : String
+- pobierzDaneUzytkownika(string) : Uzytkownik
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
