@@ -64,11 +64,6 @@ void UzytkownikMenedzer::wypiszWszystkichUzytkownikow()
     }
 }
 
-void UzytkownikMenedzer::wczytajUzytkownikowZPliku()
-{
-    uzytkownicy = plikZUzytkownikami.wczytajUzytkownikowZPliku();
-}
-
 void UzytkownikMenedzer::ustawIdZalogowanegoUzytkownika(int id)
 {
     if (id>=0)
@@ -102,7 +97,7 @@ void UzytkownikMenedzer::logowanieUzytkownika()
                 {
                     cout << endl << "Zalogowales sie." << endl << endl;
                     system("pause");
-                    ustawIdZalogowanegoUzytkownika((*itr).pobierzId());
+                    idZalogowanegoUzytkownika =(*itr).pobierzId();
                     return;
                 }
             }
@@ -139,5 +134,12 @@ void UzytkownikMenedzer::wylogowanieUzytkownika()
 {
     ustawIdZalogowanegoUzytkownika(0);
     return;
+}
+
+bool UzytkownikMenedzer::czyUzytkownikJestZalogowany(){
+    if(idZalogowanegoUzytkownika > 0)
+        return true;
+    else
+        return false;
 }
 
