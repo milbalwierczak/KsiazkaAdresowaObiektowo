@@ -7,7 +7,6 @@ string MetodyPomocnicze::wczytajLinie()
     return wejscie;
 }
 
-
 string MetodyPomocnicze::konwerjsaIntNaString(int liczba)
 {
     ostringstream ss;
