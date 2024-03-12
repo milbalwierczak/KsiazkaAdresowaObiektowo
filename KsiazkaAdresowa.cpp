@@ -55,3 +55,15 @@ void KsiazkaAdresowa::edytujAdresata()
 {
     return adresatMenedzer->edytujAdresata();
 };
+
+
+void KsiazkaAdresowa::wyszukajAdresatowPoImieniu()
+{
+    return adresatMenedzer->wyszukajAdresatowPoImieniu();
+};
+
+
+void KsiazkaAdresowa::wyszukajAdresatowPoNazwisku()
+{
+    return adresatMenedzer->wyszukajAdresatowPoNazwisku();
+};
