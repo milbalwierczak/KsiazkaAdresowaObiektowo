@@ -58,7 +58,6 @@ int main()
             cout << "Twoj wybor: ";
             wybor = MetodyPomocnicze::wczytajZnak();
 
-
             switch (wybor)
             {
             case '1':
