@@ -50,7 +50,7 @@ int main()
             //cout << "3. Wyszukaj po nazwisku" << endl;
             cout << "4. Wyswietl adresatow" << endl;
             cout << "5. Usun adresata" << endl;
-            //cout << "6. Edytuj adresata" << endl;
+            cout << "6. Edytuj adresata" << endl;
             cout << "---------------------------" << endl;
             cout << "7. Zmien haslo" << endl;
             cout << "8. Wyloguj sie" << endl;
@@ -75,10 +75,9 @@ int main()
                 break;
             case '5':
                 ksiazkaAdresowa.usunAdresata();
-                //idOstatniegoAdresata = podajIdOstatniegoAdresataPoUsunieciuWybranegoAdresata(idUsunietegoAdresata, idOstatniegoAdresata);
                 break;
             case '6':
-                //edytujAdresata(adresaci);
+                ksiazkaAdresowa.edytujAdresata();
                 break;
             case '7':
                 ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika();

@@ -50,3 +50,8 @@ void KsiazkaAdresowa::usunAdresata()
 {
     return adresatMenedzer->usunAdresata();
 };
+
+void KsiazkaAdresowa::edytujAdresata()
+{
+    return adresatMenedzer->edytujAdresata();
+};
